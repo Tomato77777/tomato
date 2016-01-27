@@ -1,5 +1,5 @@
 <?php
-$fp = fopen("../storage.txt", "r");
+$fp = fopen("../storage.txt", "w+");
 while ($line = fgets($fp)) {
   print($line);
 }
