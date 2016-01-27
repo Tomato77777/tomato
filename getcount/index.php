@@ -1,5 +1,5 @@
 <?php 
-2 $fp = fopen("../storagecount.txt", "r"); 
+2 $fp = fopen("../storage.txt", "r"); 
 3 while ($line = fgets($fp)) { 
 4   print($line); 
 5 } 
