@@ -4,5 +4,4 @@
    print($line); 
  } 
  fclose($fp); 
- ?> 
-
+ ?>
