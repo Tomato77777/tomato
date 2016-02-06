@@ -1,0 +1,7 @@
+<?php 
+$fp = fopen("../experiment/storagesensor1.txt", "r"); 
+while ($line = fgets($fp)) { 
+ print($line); 
+} 
+fclose($fp); 
+?> 
