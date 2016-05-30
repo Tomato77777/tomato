@@ -2,9 +2,10 @@
 header("Content-type: text/plain; charset=UTF-8"); 
 if (isset($_GET['set_val'])) 
 { 
+ $val = date('Y m d');
  $val = $_GET['set_val'] . "<br />\n"; 
  $fp = fopen("../teststoragesensor.txt", "a"); 
- fwrite($fp, date('Y m d'),$val); 
+ fwrite($fp, $val); 
  fclose($fp); 
 } 
 ?> 
