@@ -4,8 +4,4 @@ $val = "";
 $fp = fopen("../storage.txt", "w");
 fwrite($fp, $val);
 fclose($fp);
-$val = "";
-$fp = fopen("../storagesensor.txt", "w");
-fwrite($fp, $val);
-fclose($fp);
 ?>
