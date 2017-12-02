@@ -1,7 +1,13 @@
 <?php 
 header("Content-type: text/plain; charset=UTF-8"); 
-$val = ""; 
-$fp = fopen("../teststoragesensor.txt", "w"); 
-fwrite($fp, $val); 
-fclose($fp); 
-?> 
+date_default_timezone_set('Asia/Tokyo');
+
+if (isset($_GET['set_val']))
+{
+  $file_name = "../teststoragesensor.txt";
+  $val = date("Y/m/d H:i//").$_GET['set_val'].'℃です！';
+  $contents = file_get_contents($file_name);
+  $contents = $val . "<br />\n" . $contents;
+  file_put_contents($file_name, $contents);
+}
+?>
