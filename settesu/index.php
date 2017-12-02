@@ -6,5 +6,5 @@ if (isset($_GET['set_val']))
   $fp = fopen("../storage.txt", "w+");
   fwrite($fp, $val);
   fclose($fp);
- }
- ?>
+}
+?>
